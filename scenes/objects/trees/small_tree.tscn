@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://jiafkm7cnaob"]
 
 [ext_resource type="Texture2D" uid="uid://cle1fflqflf14" path="res://assets/game/objects/basic_grass_biom_things.png" id="1_a8qts"]
-[ext_resource type="Shader" uid="uid://22u0lu6fprvh" path="res://scenes/objects/trees/tree_shake.gdshader" id="1_w057i"]
+[ext_resource type="Shader" uid="uid://22u0lu6fprvh" path="res://scenes/objects/shake.gdshader" id="1_w057i"]
 [ext_resource type="Script" uid="uid://6bw80o2ye0ji" path="res://scenes/objects/trees/small_tree.gd" id="2_g5iuu"]
 [ext_resource type="PackedScene" uid="uid://c7rgc5yefmyrf" path="res://scenes/components/hurt_component.tscn" id="2_xyb6m"]
 [ext_resource type="PackedScene" uid="uid://jkco1s2506gk" path="res://scenes/components/damage_component.tscn" id="3_au4vd"]
@@ -32,6 +32,7 @@ script = ExtResource("2_g5iuu")
 max_damage = 3
 
 [node name="HurtComponent" parent="." instance=ExtResource("2_xyb6m")]
+tool = 1
 
 [node name="HurtCollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
 position = Vector2(0, -11)
