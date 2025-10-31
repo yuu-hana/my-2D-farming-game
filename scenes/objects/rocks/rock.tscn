@@ -20,7 +20,7 @@ region = Rect2(128, 18, 16, 12)
 radius = 7.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_70ahf"]
-radius = 6.0
+radius = 4.0
 
 [node name="Rock" type="Sprite2D"]
 material = SubResource("ShaderMaterial_8i8v8")
@@ -39,7 +39,7 @@ debug_color = Color(0.747065, 0.422385, 0.503625, 0.42)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, -5)
+position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_70ahf")
 
 [node name="DamageComponent" parent="." instance=ExtResource("4_f5itc")]
